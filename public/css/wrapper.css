@@ -1,0 +1,40 @@
+
+.wrapper-input {
+    display: flex;
+  }
+  
+  .wrapper-input .input {
+    width: 2rem;
+    text-align: center;
+    font-weight: bolder;
+  }
+  
+  #wrapper-input-top-left,
+  #wrapper-input-top-right,
+  #wrapper-input-bottom-left,
+  #wrapper-input-bottom-right {
+      position: relative;
+  }
+  
+  
+  #wrapper-input-top-left {
+    /* display: flex; */
+    right: -5rem;
+    top: -12rem;
+  }
+  
+  #wrapper-input-top-right {
+    left: 32rem;
+    top: -12rem;
+  }
+  
+  #wrapper-input-bottom-left {
+    bottom: -12rem;
+    right: -1rem;
+  }
+  
+  #wrapper-input-bottom-right {
+    left: 28rem;
+    bottom: -12rem;
+  }
+  

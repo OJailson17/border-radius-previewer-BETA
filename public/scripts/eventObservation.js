@@ -1,11 +1,3 @@
-// Variável global que recebe os valores do textarea;
-var textarea = document.querySelector('#result');
-
-var surface = document.querySelector('.surface');
-
-
-// EVENTOS
-
 // função que dispara ao digitar alguma coisa nos campos de input
 const eventObservation = (event) => {
     // Variáveis que recebem os valores dos inputs
@@ -47,21 +39,4 @@ const eventObservation = (event) => {
         return;
     }
 
-}
-
-// Copia os dados do textarea para a área de transferência
-const copy = () => {
-    if(textarea.value === ''){
-        alert('Área de texto vazia')
-    }else{
-        textarea.select();
-        document.execCommand("copy");
-    }
-
-}
-
-// Deleta todos os campos e retorna ao estdo original
-const clean = () => {
-   textarea.value = '';
-   surface.style.borderRadius = 0 + 'px';
 }
