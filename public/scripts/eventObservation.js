@@ -11,6 +11,7 @@ const eventObservation = (event) => {
   // Variável que recebe o código da tecla digitada
   const KEYCODE = event.keyCode;
 
+  // Verifica o elemento wrapper selecionado e adiciona às bordas o valor digitado pelo usuário
   if (KEYCODE === ENTER_KEY && top_left === document.activeElement) {
     if (textarea === "") {
       textarea.value = `border-top-left-radius: ${top_left.value}px; \n`;
