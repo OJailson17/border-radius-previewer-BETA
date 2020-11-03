@@ -1,29 +1,27 @@
-
 .buttons {
-    display: flex;
-  }
-  
-  .primary-button,
-  .secundary-button {
-    width: 10rem;
-    margin-left: 3.5rem;
-  }
-  
-  .btn{
-      width: 6rem;
-      height: 2rem;
-      margin-top: .5rem;
-      font-size: 1rem;
-      font-weight: bold;
-      background: #fff;
-      border: none;
-      border-radius: .5rem;
-      /* outline: none; */
-      cursor: pointer;
-      transition: background .2s;
-  }
-  
-  .btn:hover {
-      background: #e2e2e2;
-  }
-  
+  display: flex;
+}
+
+.primary-button,
+.secundary-button {
+  width: 10rem;
+  margin-left: 3.5rem;
+}
+
+.btn {
+  width: 6rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  /* outline: none; */
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #e2e2e2;
+}

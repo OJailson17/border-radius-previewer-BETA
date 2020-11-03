@@ -1,63 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Border Radius Previewer</title>
 
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
 
     <!-- Style Links -->
-    <link rel="stylesheet" href="../../public/css/main.css">
-    <link rel="stylesheet" href="../../public/css/buttons.css">
-    <link rel="stylesheet" href="../../public/css/container.css">
-    <link rel="stylesheet" href="../../public/css/wrapper.css">
+    <link rel="stylesheet" href="../../public/css/main.css" />
+    <link rel="stylesheet" href="../../public/css/buttons.css" />
+    <link rel="stylesheet" href="../../public/css/container.css" />
+    <link rel="stylesheet" href="../../public/css/wrapper.css" />
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;800;900&display=swap" rel="stylesheet">
-</head>
-<body>
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="logo-text">Border Radius Previewer</div>
 
     <div class="container">
-        <div class="wrapper-input" id="wrapper-input-top-left">
-            <input type="number" class="input" id="top-left" value="0" onkeypress="eventObservation(event)">
+      <div class="wrapper-input" id="wrapper-input-top-left">
+        <input
+          type="number"
+          class="input"
+          id="top-left"
+          value="0"
+          onkeypress="eventObservation(event)"
+        />
+      </div>
+
+      <div class="wrapper-input" id="wrapper-input-top-right">
+        <input
+          type="number"
+          class="input"
+          id="top-right"
+          value="0"
+          onkeypress="eventObservation(event)"
+        />
+      </div>
+
+      <div class="wrapper-input" id="wrapper-input-bottom-left">
+        <input
+          type="number"
+          class="input"
+          id="bottom-left"
+          value="0"
+          onkeypress="eventObservation(event)"
+        />
+      </div>
+
+      <div class="wrapper-input" id="wrapper-input-bottom-right">
+        <input
+          type="number"
+          class="input"
+          id="bottom-right"
+          value="0"
+          onkeypress="eventObservation(event)"
+        />
+      </div>
+
+      <div class="surface">
+        <textarea id="result" readonly></textarea>
+
+        <div class="buttons">
+          <div class="primary-button">
+            <button class="btn" onclick="copy()">Copy</button>
+          </div>
+          <div class="secundary-buttton">
+            <button class="btn" onclick="clean()">Clear</button>
+          </div>
         </div>
-
-        <div class="wrapper-input" id="wrapper-input-top-right">
-            <input type="number" class="input" id="top-right" value="0" onkeypress="eventObservation(event)">
-        </div>
-
-        <div class="wrapper-input" id="wrapper-input-bottom-left">
-            <input type="number" class="input" id="bottom-left" value="0" onkeypress="eventObservation(event)">
-        </div>
-
-        <div class="wrapper-input" id="wrapper-input-bottom-right">
-            <input type="number" class="input" id="bottom-right" value="0" onkeypress="eventObservation(event)">
-        </div>
-
-        <div class="surface">
-            <textarea id='result' readonly></textarea>
-            
-            <div class="buttons">
-
-                <div class="primary-button">
-                    <button class="btn" onclick="copy()">Copy</button>
-                </div>
-                <div class="secundary-buttton">
-                    <button class="btn" onclick="clean()">Clear</button>
-                </div>
-            </div>
-        </div>
-
+      </div>
     </div>
-
 
     <!-- Scripts -->
     <script src="../../public/scripts/main.js"></script>
     <script src="../../public/scripts/eventObservation.js"></script>
     <script src="../../public/scripts/copyFunction.js"></script>
     <script src="../../public/scripts/clearFunction.js"></script>
-</body>
+  </body>
 </html>
